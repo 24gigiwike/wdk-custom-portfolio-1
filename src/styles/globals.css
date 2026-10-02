@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Document-level on purpose. Lenis smooth-scrolls the window, so these are not
+   scoped under the template root. They do not set portfolio colors or type. */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+[data-template="wdk-premium-portfolio-1"] {
+    background-color: #F8F5F0;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+[data-template="wdk-premium-portfolio-1"] .logo {
+    width: 150px;
+}
+
+[data-template="wdk-premium-portfolio-1"] .container {
+    width: 100%;
+    height: 100vh;
+    padding: 1.5rem;
+    margin-right: 3rem;
+}
+
+[data-template="wdk-premium-portfolio-1"] .container-left {
+    float: left;
+    width: 45%;
+}
+
+[data-template="wdk-premium-portfolio-1"] .container-right {
+    float: right;
+    width: 55%;
+    height: 100vh;
+    background-image: var(--hero-image);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+[data-template="wdk-premium-portfolio-1"] .nav-container-left-L,
+[data-template="wdk-premium-portfolio-1"] .nav-container-left-R {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    float: left;
+}
+
+[data-template="wdk-premium-portfolio-1"] .nav-container-right {
+    padding: 1.5rem;
+    display: flex;
+    position: absolute;
+    right: 30px;
+}
+
+[data-template="wdk-premium-portfolio-1"] .socials {
+    display: flex;
+    gap: 15px;
+    top: 50px;
+    position: absolute;
+}
+
+[data-template="wdk-premium-portfolio-1"] .socials a {
+    text-decoration: none;
+    color: #000000;
+}
+
+[data-template="wdk-premium-portfolio-1"] h1 {
+    padding: 1%;
+    margin-top: 15%;
+    display: inline-block;
+    font-family: "Geist", sans-serif;
+    font-size: 2rem;
+    color: #000000;
+    line-height: 1.5;
+}
+
+[data-template="wdk-premium-portfolio-1"] h2 {
+    padding: 1%;
+    display: inline-block;
+    font-family: "Geist", sans-serif;
+    font-size: 8rem;
+    color: #000000;
+    line-height: 1.5;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+[data-template="wdk-premium-portfolio-1"] button {
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: "Geist", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+[data-template="wdk-premium-portfolio-1"] button:hover {
+    background: linear-gradient(to right, #e8c9fc, #e4cce7, #f7d7fe);
+    color: #000000;
+}
+
+[data-template="wdk-premium-portfolio-1"] h3 {
+    font-family: "Geist", sans-serif;
+    font-size: 0.8rem;
+    color: #000000;
+    line-height: 1.5;
+    font-weight: lighter;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
+[data-template="wdk-premium-portfolio-1"] b {
+    margin-right: 1rem;
+    font-family: "Geist", sans-serif;
+    background-color: #e4afeb;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    [data-template="wdk-premium-portfolio-1"] .container-left,
+    [data-template="wdk-premium-portfolio-1"] .container-right {
+        width: 100%;
+        float: none;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .logo {
+        width: 100px;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .nav-container-left-L,
+    [data-template="wdk-premium-portfolio-1"] .nav-container-left-R {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        float: left;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .socials {
+        top: 40px;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] h1 {
+        padding: 1%;
+        margin-top: 15%;
+        display: inline-block;
+        font-family: "Geist", sans-serif;
+        font-size: 1.5rem;
+        color: #000000;
+        line-height: 1.5;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] button {
+        margin-bottom: 1.5rem;
+        background: linear-gradient(to right, #e8c9fc, #e4cce7, #f7d7fe);
+        color: #000000;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .container-right {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        margin: 0;
+        background-image: var(--hero-image-mobile);
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .fa-bars {
+        display: none;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] h2 {
+        padding: 5%;
+        font-family: "Geist", sans-serif;
+        font-size: 2rem;
+        color: #000000;
+        line-height: 1.5;
+        margin-top: 25rem;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,170 @@
+[data-template="wdk-premium-portfolio-1"] #portfolio {
+    width: 100%;
+    padding: 8rem 0;
+    background: transparent;
+}
+
+[data-template="wdk-premium-portfolio-1"] .portfolio-container {
+    width: min(1800px, 94%);
+    margin: auto;
+}
+
+[data-template="wdk-premium-portfolio-1"] #projects {
+    display: flex;
+    flex-direction: column;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-card {
+    position: sticky;
+    top: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-window {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 28px;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-window:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 60px 140px rgba(0, 0, 0, .45);
+}
+
+[data-template="wdk-premium-portfolio-1"] .window-preview {
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+}
+
+[data-template="wdk-premium-portfolio-1"] .window-preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    pointer-events: none;
+}
+
+[data-template="wdk-premium-portfolio-1"] .window-footer {
+    display: none;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2rem;
+    padding: 2.5rem;
+    background: #fff;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-meta {
+    display: none;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-number {
+    font-size: .85rem;
+    color: #777;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-meta h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-meta p {
+    color: #9b9b9b;
+    margin: 0;
+    line-height: 1.6;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-tech {
+    display: flex;
+    gap: .7rem;
+    flex-wrap: wrap;
+    margin-top: .5rem;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-tech span {
+    padding: .55rem 1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .08);
+    background: rgba(255, 255, 255, .04);
+    font-size: .85rem;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-link {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    font-weight: lighter;
+    font-family: "Geist", sans-serif;
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    transition: .35s ease;
+}
+
+[data-template="wdk-premium-portfolio-1"] .project-link:hover {
+    transform: translateX(8px);
+}
+
+@media (max-width: 992px) {
+    [data-template="wdk-premium-portfolio-1"] .window-preview {
+        height: 60vh;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .window-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .project-card {
+        padding-inline: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    [data-template="wdk-premium-portfolio-1"] .window-preview {
+        height: 60vh;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .window-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .project-card {
+        padding-inline: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    [data-template="wdk-premium-portfolio-1"] .window-preview {
+        height: 60vh;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .window-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 2rem;
+        padding: 2.5rem;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .project-card {
+        padding-inline: 1.25rem;
+    }
+}

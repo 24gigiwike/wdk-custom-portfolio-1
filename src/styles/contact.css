@@ -1,0 +1,132 @@
+[data-template="wdk-premium-portfolio-1"] .luxury-contact {
+    padding: 120px 30px;
+    background: transparent;
+    font-family: Inter, sans-serif;
+}
+
+[data-template="wdk-premium-portfolio-1"] .contact-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+[data-template="wdk-premium-portfolio-1"] .eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #e09ae9;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+[data-template="wdk-premium-portfolio-1"] .contact-intro h2 {
+    font-size: 56px;
+    line-height: 1.05;
+    letter-spacing: -2px;
+    font-weight: 600;
+    color: #111;
+    margin: 0 0 25px;
+}
+
+[data-template="wdk-premium-portfolio-1"] .description {
+    max-width: 430px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+}
+
+[data-template="wdk-premium-portfolio-1"] .contact-form {
+    border-top: 1px solid #d9d5cd;
+    padding-top: 35px;
+}
+
+[data-template="wdk-premium-portfolio-1"] .field-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+[data-template="wdk-premium-portfolio-1"] .field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+[data-template="wdk-premium-portfolio-1"] label {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+}
+
+[data-template="wdk-premium-portfolio-1"] input,
+[data-template="wdk-premium-portfolio-1"] select,
+[data-template="wdk-premium-portfolio-1"] textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #bbb;
+    padding: 15px 0;
+    font-size: 16px;
+    outline: none;
+    transition: .3s ease;
+    font-family: inherit;
+}
+
+[data-template="wdk-premium-portfolio-1"] input:focus,
+[data-template="wdk-premium-portfolio-1"] select:focus,
+[data-template="wdk-premium-portfolio-1"] textarea:focus {
+    border-color: #111;
+}
+
+[data-template="wdk-premium-portfolio-1"] textarea {
+    height: 120px;
+    resize: none;
+}
+
+[data-template="wdk-premium-portfolio-1"] .submit-button {
+    margin-top: 20px;
+    background: linear-gradient(to right, #e8c9fc, #e4cce7, #f7d7fe);
+    color: #000000;
+    border: none;
+    padding: 18px 35px;
+    font-size: 15px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: .3s ease;
+}
+
+[data-template="wdk-premium-portfolio-1"] .submit-button:hover {
+    background: linear-gradient(to right, #e8c9fc, #e4cce7, #f7d7fe);
+}
+
+[data-template="wdk-premium-portfolio-1"] .submit-button span {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    [data-template="wdk-premium-portfolio-1"] .luxury-contact {
+        padding: 80px 20px;
+        margin-top: 450px;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .contact-intro h2 {
+        font-size: 40px;
+    }
+
+    [data-template="wdk-premium-portfolio-1"] .field-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+}
